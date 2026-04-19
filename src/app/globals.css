@@ -204,6 +204,151 @@ textarea {
   color: var(--ink-muted);
 }
 
+/* Premium Section Heading Styles */
+section h2,
+.section-heading {
+  background: linear-gradient(135deg, var(--ink) 0%, var(--basin-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* Premium Section with accent bar */
+.section-heading-premium {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.section-heading-premium::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 1.2em;
+  background: linear-gradient(180deg, var(--gulf-teal), var(--basin-blue));
+  border-radius: 3px;
+}
+
+/* Premium eyebrow styling */
+.eyebrow-premium {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.5rem 1.2rem;
+  background: linear-gradient(135deg, rgba(26, 155, 142, 0.08), rgba(13, 79, 92, 0.08));
+  border: 1px solid rgba(26, 155, 142, 0.2);
+  border-radius: 3rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gulf-teal);
+  backdrop-filter: blur(10px);
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 5vw, 3rem) !important;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem) !important;
+  }
+
+  h3 {
+    font-size: clamp(1.2rem, 3vw, 1.8rem) !important;
+  }
+
+  .eyebrow {
+    font-size: 0.65rem;
+  }
+
+  .section-padding {
+    padding: 2rem 1rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-title {
+    font-size: 0.95rem;
+  }
+
+  .surface-card {
+    border-radius: 1.2rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  .section-heading-premium::before {
+    width: 3px;
+    height: 1em;
+  }
+}
+
+/* Premium hover effects for buttons */
+.btn-primary:active {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 16px rgba(26, 155, 142, 0.25);
+}
+
+.btn-secondary:hover {
+  background-color: var(--gulf-teal);
+  color: white;
+  box-shadow: 0 8px 16px rgba(26, 155, 142, 0.2);
+}
+
+/* Premium card hover effects */
+.surface-card:hover {
+  box-shadow: 0 30px 60px rgba(15, 43, 53, 0.12);
+  border-color: rgba(26, 155, 142, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Premium link styles */
+a {
+  color: var(--gulf-teal);
+  text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: gradient linear-gradient(90deg, var(--gulf-teal), var(--basin-blue));
+  transition: width 300ms ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

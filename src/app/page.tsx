@@ -3,7 +3,7 @@ import { PageHero } from "@/components/page-hero";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Awtad Energy | Renewable Energy Solutions",
+  title: "OEnergy | Renewable Energy Solutions",
   description:
     "Custom renewable energy solutions for solar PV, wind energy, hybrid systems, and battery storage. Design consultancy and operation & maintenance services tailored to your needs.",
   path: "/",
@@ -62,11 +62,11 @@ const solutionCards = [
 ];
 
 const aboutContent = {
-  eyebrow: "About Our Company",
+  eyebrow: "About OEnergy",
   title: "We deliver forward-thinking, sustainable energy solutions",
   description:
     "Specializing in Solar PV, Wind Energy, and cutting-edge Hybrid Systems for a cleaner tomorrow.",
-  body: "At Awtad Energy, we offer comprehensive engineering, procurement, construction, operation and maintenance services for clean energy infrastructure. We specialize in wind energy, solar PV, and energy storage, designing integrated renewable energy systems that meet specific energy needs while promoting environmental sustainability. Our goal is to create cost-effective, reliable, and clean energy solutions that support a sustainable green future.",
+  body: "At OEnergy, we offer comprehensive engineering, procurement, construction, operation and maintenance services for clean energy infrastructure. We specialize in wind energy, solar PV, and energy storage, designing integrated renewable energy systems that meet specific energy needs while promoting environmental sustainability. Our goal is to create cost-effective, reliable, and clean energy solutions that support a sustainable green future.",
 };
 
 export default function HomePage() {

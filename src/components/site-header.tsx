@@ -20,10 +20,10 @@ export function SiteHeader() {
           <BrandMark />
           <span className="grid gap-0.5">
             <span className="font-display text-[1.35rem] font-bold uppercase tracking-[-0.06em] text-[var(--ink)]">
-              Awtad Energy
+              OEnergy
             </span>
             <span className="text-[0.72rem] font-bold uppercase tracking-[0.24em] text-[var(--ink-muted)]">
-              Renewable Energy / Oman
+              Renewable Solutions
             </span>
           </span>
         </Link>
@@ -47,16 +47,16 @@ export function SiteHeader() {
                 </Link>
 
                 {children?.length ? (
-                  <div className="pointer-events-none absolute left-1/2 top-full z-20 mt-5 hidden w-[320px] -translate-x-1/2 rounded-[1.6rem] border border-[rgba(22,49,59,0.08)] bg-white/96 p-3 opacity-0 shadow-[0_26px_60px_rgba(22,49,59,0.16)] backdrop-blur-xl transition duration-200 group-hover:pointer-events-auto group-hover:block group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:block group-focus-within:opacity-100">
-                    <div className="mb-2 px-3 pt-2 text-[0.72rem] font-extrabold uppercase tracking-[0.22em] text-[var(--ink-muted)]">
-                      Solution Overview
+                  <div className="pointer-events-none absolute left-1/2 top-full z-20 mt-5 hidden w-[340px] -translate-x-1/2 rounded-[1.6rem] border border-[rgba(22,49,59,0.12)] bg-white/98 p-4 opacity-0 shadow-[0_26px_60px_rgba(22,49,59,0.16)] backdrop-blur-xl transition duration-200 group-hover:pointer-events-auto group-hover:block group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:block group-focus-within:opacity-100">
+                    <div className="mb-3 px-3 pt-1 text-[0.7rem] font-extrabold uppercase tracking-[0.2em] text-[var(--ink-muted)]">
+                      Solutions
                     </div>
-                    <div className="grid gap-1">
+                    <div className="grid gap-2">
                       {children.map((child) => (
                         <Link
                           key={`${item.href}-${child.label}`}
                           href={child.href}
-                          className="rounded-[1rem] px-3 py-3 text-sm font-semibold text-[var(--ink-soft)] transition hover:bg-[rgba(18,123,105,0.08)] hover:text-[var(--ink)]"
+                          className="rounded-[1.1rem] px-4 py-3 text-sm font-semibold text-[var(--ink-soft)] transition hover:bg-[rgba(18,123,105,0.1)] hover:text-[var(--gulf-teal)]"
                         >
                           {child.label}
                         </Link>
@@ -70,10 +70,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <span className="font-arabic text-sm font-bold text-[var(--ink-soft)]" lang="ar">
-            أوتاد
-          </span>
-          <ButtonLink href="/contact">Start a Project Brief</ButtonLink>
+          <ButtonLink href="/contact">Start a Project</ButtonLink>
         </div>
 
         <button
@@ -118,13 +115,13 @@ export function SiteHeader() {
                   {item.label}
                 </Link>
                 {children?.length ? (
-                  <div className="mt-1 grid gap-1 rounded-[1.2rem] bg-[rgba(17,35,45,0.03)] p-2">
+                  <div className="mt-1 grid gap-1 rounded-[1.2rem] bg-[rgba(17,35,45,0.03)] p-3">
                     {children.map((child) => (
                       <Link
                         key={`${item.href}-${child.label}`}
                         href={child.href}
                         onClick={() => setOpen(false)}
-                        className="rounded-[0.95rem] px-3 py-2 text-sm font-medium text-[var(--ink-soft)] transition hover:bg-white hover:text-[var(--ink)]"
+                        className="rounded-[0.95rem] px-4 py-3 text-sm font-semibold text-[var(--ink-soft)] transition hover:bg-[rgba(18,123,105,0.12)] hover:text-[var(--gulf-teal)]"
                       >
                         {child.label}
                       </Link>
@@ -136,7 +133,7 @@ export function SiteHeader() {
           })}
 
           <ButtonLink href="/contact" className="mt-2">
-            Start a Project Brief
+            Start a Project
           </ButtonLink>
         </div>
       </div>

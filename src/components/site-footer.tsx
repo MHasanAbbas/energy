@@ -13,16 +13,15 @@ export function SiteFooter() {
             <BrandMark />
             <div className="grid gap-0.5">
               <span className="font-display text-[1.35rem] font-bold uppercase tracking-[-0.06em]">
-                Awtad Energy
+                OEnergy
               </span>
               <span className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-white/60">
-                Renewable Energy / Oman
+                Renewable Energy Solutions
               </span>
             </div>
           </div>
           <p className="mt-5 max-w-md text-sm leading-7 text-white/72">
-            Renewable energy company delivering solar PV, wind, hybrid systems, battery storage,
-            containerized units, consultancy, O&amp;M and transition-ready infrastructure planning across the region.
+            Custom renewable energy solutions delivering solar PV, wind energy, hybrid systems, battery storage, design consultancy, and operation and maintenance services for a sustainable future.
           </p>
         </div>
 
@@ -61,8 +60,8 @@ export function SiteFooter() {
       </div>
 
       <div className="mx-auto flex max-w-[1240px] flex-col gap-2 border-t border-white/10 px-4 py-5 text-sm text-white/55 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8">
-        <span>© 2026 Awtad Energy. All rights reserved.</span>
-        <span>Built for the Gulf renewable energy market.</span>
+        <span>© 2026 OEnergy. All rights reserved.</span>
+        <span>Premium renewable energy solutions for a sustainable world.</span>
       </div>
     </footer>
   );
