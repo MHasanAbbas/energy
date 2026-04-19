@@ -5,9 +5,9 @@ import { createMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 
 export const metadata = createMetadata({
-  title: "Contact Awtad Energy",
+  title: "Contact OEnergy | Get In Touch",
   description:
-    "Get in touch with Awtad Energy to discuss your renewable energy project. We're here to help you find the right solution.",
+    "Get in touch with OEnergy to discuss your renewable energy project. We're here to help you find the right solution.",
   path: "/contact",
 });
 

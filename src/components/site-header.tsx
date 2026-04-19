@@ -47,7 +47,10 @@ export function SiteHeader() {
                 </Link>
 
                 {children?.length ? (
-                  <div className="pointer-events-none absolute left-1/2 top-full z-20 mt-5 hidden w-[340px] -translate-x-1/2 rounded-[1.6rem] border border-[rgba(22,49,59,0.12)] bg-white/98 p-4 opacity-0 shadow-[0_26px_60px_rgba(22,49,59,0.16)] backdrop-blur-xl transition duration-200 group-hover:pointer-events-auto group-hover:block group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:block group-focus-within:opacity-100">
+                  <div className="absolute left-1/2 top-full z-20 hidden w-[340px] -translate-x-1/2 rounded-[1.6rem] border border-[rgba(22,49,59,0.12)] bg-white/98 p-4 opacity-0 shadow-[0_26px_60px_rgba(22,49,59,0.16)] backdrop-blur-xl transition duration-200 group-hover:block group-hover:opacity-100 group-focus-within:block group-focus-within:opacity-100 pt-6">
+                    {/* Invisible bridge to prevent gap issues */}
+                    <div className="pointer-events-none absolute -top-3 left-0 right-0 h-3" />
+                    
                     <div className="mb-3 px-3 pt-1 text-[0.7rem] font-extrabold uppercase tracking-[0.2em] text-[var(--ink-muted)]">
                       Solutions
                     </div>

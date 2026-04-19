@@ -29,7 +29,7 @@ export function SectionShell({
     <section
       id={id}
       className={cn(
-        "relative px-4 py-18 md:px-6 md:py-24 lg:px-8",
+        "relative px-4 py-12 sm:px-6 sm:py-16 md:py-20 lg:px-8 lg:py-24",
         tone === "soft" &&
           "bg-[radial-gradient(circle_at_top_left,rgba(18,123,105,0.07),transparent_24%),linear-gradient(180deg,rgba(220,235,221,0.5),rgba(255,255,255,0)),var(--sand-soft)]",
         tone === "dark" &&
@@ -37,7 +37,7 @@ export function SectionShell({
         className,
       )}
     >
-      <div className="mx-auto flex max-w-[1240px] flex-col gap-10">{children}</div>
+      <div className="mx-auto flex max-w-[1240px] flex-col gap-8 sm:gap-9 md:gap-10">{children}</div>
     </section>
   );
 }
@@ -68,10 +68,10 @@ export function FeatureGridSection({
 
       <div
         className={cn(
-          "grid gap-6",
-          columns === 2 && "lg:grid-cols-2",
-          columns === 3 && "md:grid-cols-2 xl:grid-cols-3",
-          columns === 4 && "md:grid-cols-2 xl:grid-cols-4",
+          "grid gap-4 sm:gap-5 md:gap-6",
+          columns === 2 && "sm:grid-cols-2 lg:grid-cols-2",
+          columns === 3 && "sm:grid-cols-2 lg:grid-cols-3",
+          columns === 4 && "sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
         )}
       >
         {items.map((item, index) => {
@@ -91,7 +91,7 @@ export function FeatureGridSection({
                 )}
               >
                 {item.imageSrc ? (
-                  <div className="relative h-56 overflow-hidden border-b border-[rgba(26,155,142,0.12)]">
+                  <div className="relative h-40 sm:h-48 md:h-56 overflow-hidden border-b border-[rgba(26,155,142,0.12)]">
                     <Image
                       src={item.imageSrc}
                       alt={item.imageAlt || `${item.title} placeholder visual`}
@@ -107,14 +107,14 @@ export function FeatureGridSection({
                     ) : null}
                   </div>
                 ) : null}
-                <div className={cn("relative p-7", !item.imageSrc && "before:absolute before:inset-x-6 before:top-0 before:h-px before:bg-[linear-gradient(90deg,transparent,var(--mint-line),transparent)]")}>
-                  {item.tag && !item.imageSrc ? <div className="kicker">{item.tag}</div> : null}
-                  <h3 className={cn("card-title text-lg font-bold text-[var(--ink)]", dark && "text-white")}>{item.title}</h3>
-                  <p className={cn("mt-3 text-sm leading-7", dark ? "text-white/72" : "text-[var(--ink-soft)]")}>
+                <div className={cn("relative p-5 sm:p-6 md:p-7", !item.imageSrc && "before:absolute before:inset-x-6 before:top-0 before:h-px before:bg-[linear-gradient(90deg,transparent,var(--mint-line),transparent)]")}>
+                  {item.tag && !item.imageSrc ? <div className="kicker text-xs">{item.tag}</div> : null}
+                  <h3 className={cn("card-title text-base sm:text-lg font-bold text-[var(--ink)]", dark && "text-white")}>{item.title}</h3>
+                  <p className={cn("mt-2 sm:mt-3 text-sm leading-6 sm:leading-7", dark ? "text-white/72" : "text-[var(--ink-soft)]")}>
                     {item.description}
                   </p>
                   {item.href && (
-                    <div className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[var(--gulf-teal)] group-hover:gap-3 transition-all">
+                    <div className="mt-4 sm:mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[var(--gulf-teal)] group-hover:gap-3 transition-all">
                       Learn More
                       <span className="transition-transform group-hover:translate-x-1">→</span>
                     </div>
@@ -153,34 +153,34 @@ export function SplitSection({
   reverse?: boolean;
 }) {
   return (
-    <div className={cn("grid gap-5 lg:grid-cols-2 lg:items-center", reverse && "[&>*:first-child]:lg:order-2")}>
+    <div className={cn("grid gap-6 sm:gap-7 md:gap-8 lg:grid-cols-2 lg:items-center", reverse && "[&>*:first-child]:lg:order-2")}>
       <Reveal className="surface-card overflow-hidden p-0">
-        <div className="relative min-h-[360px]">
+        <div className="relative min-h-[280px] sm:min-h-[340px] md:min-h-[380px]">
           <Image src={imageSrc} alt={imageAlt} fill className="object-cover" sizes="(min-width: 1024px) 44vw, 100vw" />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(17,35,45,0.04),rgba(17,35,45,0.52))]" />
-          <div className="absolute left-5 bottom-5 rounded-[1.2rem] border border-white/12 bg-[rgba(17,35,45,0.24)] px-4 py-3 text-sm font-bold tracking-[0.08em] text-white backdrop-blur-md">
+          <div className="absolute left-3 sm:left-5 bottom-3 sm:bottom-5 rounded-[1.2rem] border border-white/12 bg-[rgba(17,35,45,0.24)] px-3 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-bold tracking-[0.08em] text-white backdrop-blur-md">
             {imageLabel}
           </div>
         </div>
       </Reveal>
 
-      <Reveal className="surface-card p-6 md:p-8" delay={80}>
-        <div className="eyebrow">{eyebrow}</div>
-        <h3 className="mt-4 font-display text-[clamp(2rem,4vw,3.2rem)] leading-[0.95] font-bold uppercase tracking-[-0.06em] text-[var(--ink)]">
+      <Reveal className="surface-card p-5 sm:p-6 md:p-8" delay={80}>
+        <div className="eyebrow text-xs sm:text-sm">{eyebrow}</div>
+        <h3 className="mt-3 sm:mt-4 font-display text-[clamp(1.75rem,4vw,3.2rem)] leading-[0.95] font-bold uppercase tracking-[-0.06em] text-[var(--ink)]">
           {title}
         </h3>
-        <p className="mt-4 text-lg leading-8 text-[var(--ink-soft)]">{description}</p>
-        <p className="mt-5 text-base leading-7 text-[var(--ink-soft)]">{body}</p>
-        <ul className="mt-6 grid gap-3 text-sm leading-7 text-[var(--ink-soft)]">
+        <p className="mt-3 sm:mt-4 text-base sm:text-lg leading-7 sm:leading-8 text-[var(--ink-soft)]">{description}</p>
+        <p className="mt-4 sm:mt-5 text-sm sm:text-base leading-6 sm:leading-7 text-[var(--ink-soft)]">{body}</p>
+        <ul className="mt-5 sm:mt-6 grid gap-2 sm:gap-3 text-xs sm:text-sm leading-6 sm:leading-7 text-[var(--ink-soft)]">
           {points.map((point) => (
-            <li key={point} className="flex gap-3">
-              <span className="mt-2 inline-block h-2 w-2 rounded-full bg-[var(--gulf-teal)]" />
+            <li key={point} className="flex gap-2 sm:gap-3">
+              <span className="mt-1 sm:mt-2 inline-block h-2 w-2 flex-shrink-0 rounded-full bg-[var(--gulf-teal)]" />
               <span>{point}</span>
             </li>
           ))}
         </ul>
         {cta ? (
-          <div className="mt-7">
+          <div className="mt-5 sm:mt-7">
             <ButtonLink href={cta.href} variant="secondary">
               {cta.label}
             </ButtonLink>

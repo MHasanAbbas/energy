@@ -3,9 +3,9 @@ import { PageHero } from "@/components/page-hero";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "About Awtad Energy",
+  title: "About OEnergy | Renewable Energy Solutions",
   description:
-    "Learn about Awtad Energy - a renewable energy company providing comprehensive clean energy solutions including solar PV, wind energy, hybrid systems and battery storage.",
+    "Learn about OEnergy - a renewable energy company providing comprehensive clean energy solutions including solar PV, wind energy, hybrid systems and battery storage.",
   path: "/about",
 });
 
@@ -32,9 +32,9 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About Awtad Energy"
+        eyebrow="About OEnergy"
         title="Delivering Sustainable Energy Solutions"
-        description="Awtad Energy is committed to providing high-quality, reliable renewable energy solutions. We specialize in solar PV, wind energy, hybrid systems, and battery storage designed to meet the specific needs of commercial, industrial, and residential applications."
+        description="OEnergy is committed to providing high-quality, reliable renewable energy solutions. We specialize in solar PV, wind energy, hybrid systems, and battery storage designed to meet the specific needs of commercial, industrial, and residential applications."
         imageSrc="/images/photo-engineer.jpg"
         imageAlt="Engineer inspecting renewable energy installation"
         imageLabel="Renewable Energy Expertise"
@@ -47,7 +47,7 @@ export default function AboutPage() {
           eyebrow="Our Mission"
           title="Energizing a sustainable green future"
           description="We believe renewable energy should be accessible, reliable, and tailored to your unique needs."
-          body="At Awtad Energy, we combine technical expertise with commercial understanding to deliver renewable energy solutions that work. From design through installation and ongoing maintenance, we ensure your renewable energy system performs optimally and delivers real value."
+          body="At OEnergy, we combine technical expertise with commercial understanding to deliver renewable energy solutions that work. From design through installation and ongoing maintenance, we ensure your renewable energy system performs optimally and delivers real value."
           points={[
             "Customized solutions for your specific site and requirements",
             "Expert design and engineering from experienced professionals",
@@ -63,7 +63,7 @@ export default function AboutPage() {
 
       <SectionShell>
         <FeatureGridSection
-          eyebrow="Why Choose Awtad Energy"
+          eyebrow="Why Choose OEnergy"
           title="Our Core Values"
           description="We are committed to delivering exceptional renewable energy solutions backed by expertise, reliability, and customer success."
           items={valueCards}
