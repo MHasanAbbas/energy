@@ -3,7 +3,7 @@ import { PageHero } from "@/components/page-hero";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Design & Consultancy Services | Awtad Energy",
+  title: "Design & Consultancy Services | OEnergy",
   description:
     "Professional design, feasibility studies, and consultancy services for renewable energy projects.",
   path: "/solutions/design-consultancy",
@@ -25,7 +25,7 @@ const relatedSolutions = [
   {
     title: "Hybrid Systems",
     description: "Optimize multiple renewable sources together.",
-    imageSrc: "/images/photo-solar-farm.jpg",
+    imageSrc: "/images/photo-wind-farm.jpg",
     imageAlt: "Hybrid design",
   },
 ];
@@ -48,7 +48,7 @@ export default function DesignConsultancyPage() {
         <SplitSection
           eyebrow="Specialized Services"
           title="Design & Consultancy Expertise"
-          description="Awtad Energy offers specialized design, consultancy, and feasibility services to support the successful development of solar PV, wind turbines, and battery energy storage systems (BESS)."
+          description="OEnergy offers specialized design, consultancy, and feasibility services to support the successful development of solar PV, wind turbines, and battery energy storage systems (BESS)."
           body="Our expertise ensures optimized project planning, regulatory compliance, and maximum return on investment. From initial assessment through detailed engineering and ongoing support, we guide every aspect of your renewable energy project to ensure technical excellence and commercial success."
           points={[
             "Site and resource assessment",

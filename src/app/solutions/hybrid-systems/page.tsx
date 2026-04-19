@@ -3,7 +3,7 @@ import { PageHero } from "@/components/page-hero";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Hybrid Energy Systems | Awtad Energy",
+  title: "Hybrid Energy Systems | OEnergy",
   description:
     "Integrated solar, wind and battery storage systems for resilient, reliable energy solutions.",
   path: "/solutions/hybrid-systems",
@@ -48,7 +48,7 @@ export default function HybridSystemsPage() {
         <SplitSection
           eyebrow="The Future of Energy"
           title="Hybrid Systems for Reliable Power"
-          description="At Awtad Energy, we believe hybrid renewable energy systems are the future of sustainable power. By integrating solar PV, wind turbines, and battery energy storage systems (BESS), we create fully decentralized and reliable energy solutions."
+          description="At OEnergy, we believe hybrid renewable energy systems are the future of sustainable power. By integrating solar PV, wind turbines, and battery energy storage systems (BESS), we create fully decentralized and reliable energy solutions."
           body="Hybrid systems combine the strengths of multiple technologies to deliver consistent, renewable power in all conditions. Our integrated approach ensures maximum energy yield, reliability, and long-term economic returns through optimized design and intelligent control."
           points={[
             "Fully decentralized energy generation",

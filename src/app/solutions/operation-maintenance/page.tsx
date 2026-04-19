@@ -3,7 +3,7 @@ import { PageHero } from "@/components/page-hero";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Operation & Maintenance Services | Awtad Energy",
+  title: "Operation & Maintenance Services | OEnergy",
   description:
     "Professional O&M services ensuring optimal renewable energy system performance and long-term value.",
   path: "/solutions/operation-maintenance",
@@ -48,7 +48,7 @@ export default function OperationMaintenancePage() {
         <SplitSection
           eyebrow="Asset Management"
           title="Operation, Maintenance & Monitoring"
-          description="Awtad Energy offers specialized operation, maintenance, and monitoring services to support the long-term success of your renewable energy systems. Professional asset management ensures optimized performance and maximum return on investment."
+          description="OEnergy offers specialized operation, maintenance, and monitoring services to support the long-term success of your renewable energy systems. Professional asset management ensures optimized performance and maximum return on investment."
           body="Our comprehensive O&M capabilities include 24/7 system monitoring, preventive maintenance programs, performance optimization, and rapid response support. We ensure regulatory compliance, asset protection, and consistent system performance throughout the operational lifetime of your installation."
           points={[
             "24/7 monitoring and performance tracking",

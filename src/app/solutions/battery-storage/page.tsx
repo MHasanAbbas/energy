@@ -3,7 +3,7 @@ import { PageHero } from "@/components/page-hero";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Battery Energy Storage | Awtad Energy",
+  title: "Battery Energy Storage | OEnergy",
   description:
     "Advanced battery energy storage systems (BESS) for renewable energy optimization and grid reliability.",
   path: "/solutions/battery-storage",
@@ -25,7 +25,7 @@ const relatedSolutions = [
   {
     title: "Hybrid Systems",
     description: "Essential component of integrated renewable systems.",
-    imageSrc: "/images/photo-solar-farm.jpg",
+    imageSrc: "/images/photo-wind-farm.jpg",
     imageAlt: "Hybrid system",
   },
 ];
@@ -48,7 +48,7 @@ export default function BatteryStoragePage() {
         <SplitSection
           eyebrow="Energy Storage Systems"
           title="Battery Storage for Energy Independence"
-          description="Battery energy storage systems (BESS) are essential for capturing renewable energy and using it when needed. Awtad Energy designs integrated storage solutions that maximize efficiency and energy independence."
+          description="Battery energy storage systems (BESS) are essential for capturing renewable energy and using it when needed. OEnergy designs integrated storage solutions that maximize efficiency and energy independence."
           body="Our BESS solutions work seamlessly with solar PV, wind, and hybrid systems to provide reliable, dispatchable power. Advanced monitoring, intelligent control systems, and professional maintenance ensure optimal performance and maximum return on your investment."
           points={[
             "Captures renewable energy for later use",

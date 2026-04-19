@@ -3,7 +3,7 @@ import { PageHero } from "@/components/page-hero";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Wind Energy Solutions | Awtad Energy",
+  title: "Wind Energy Solutions | OEnergy",
   description:
     "Customizable wind turbine solutions tailored to site conditions. Utility-scale and large asset wind power systems.",
   path: "/solutions/wind-energy",
@@ -13,7 +13,7 @@ const relatedSolutions = [
   {
     title: "Hybrid Systems",
     description: "Combine wind with solar and storage for optimal performance.",
-    imageSrc: "/images/photo-solar-farm.jpg",
+    imageSrc: "/images/photo-solar.jpg",
     imageAlt: "Hybrid renewable system",
   },
   {
@@ -48,7 +48,7 @@ export default function WindEnergyPage() {
         <SplitSection
           eyebrow="Customized Wind Solutions"
           title="Wind Turbines Tailored to Your Site"
-          description="At Awtad Energy, we understand that every customer has unique wind energy requirements. That's why we offer customizable wind turbine solutions tailored to site conditions, environmental factors, and regulatory standards."
+          description="At OEnergy, we understand that every customer has unique wind energy requirements. That's why we offer customizable wind turbine solutions tailored to site conditions, environmental factors, and regulatory standards."
           body="From detailed wind resource assessment to turbine selection, installation, and ongoing monitoring, we ensure your wind energy system operates at peak efficiency. Our approach combines advanced engineering with proven technology to deliver reliable, cost-effective renewable power generation."
           points={[
             "Customized to your site conditions",

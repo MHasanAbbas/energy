@@ -75,8 +75,8 @@ export default function HomePage() {
       <PageHero
         eyebrow="Sustainable Energy Solutions"
         title="Energizing a Sustainable Green Future"
-        description="At Awtad Energy, we deliver custom renewable energy solutions for commercial, residential, and industrial settings. Specializing in wind, solar PV, hybrid systems and battery storage, we design efficient, cost-effective systems tailored to your specific site and energy needs."
-        imageSrc="/images/photo-solar.jpg"
+        description="At OEnergy, we deliver custom renewable energy solutions for commercial, residential, and industrial settings. Specializing in wind, solar PV, hybrid systems and battery storage, we design efficient, cost-effective systems tailored to your specific site and energy needs."
+        imageSrc="/images/hero-home.svg"
         imageAlt="Solar PV panels and renewable energy infrastructure"
         imageLabel="Custom Renewable Energy Solutions"
         primaryCta={{ href: "/contact", label: "Get Started" }}

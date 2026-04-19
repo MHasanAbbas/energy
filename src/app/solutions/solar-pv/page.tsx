@@ -3,7 +3,7 @@ import { PageHero } from "@/components/page-hero";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Solar PV Solutions | Awtad Energy",
+  title: "Solar PV Solutions | OEnergy",
   description:
     "Tailor-made Solar PV solutions designed for maximum efficiency. Rooftop, ground-mount, and utility-scale photovoltaic systems.",
   path: "/solutions/solar-pv",
@@ -12,21 +12,21 @@ export const metadata = createMetadata({
 const relatedSolutions = [
   {
     title: "Hybrid Systems",
-    description: "Combine solar with wind and storage for maximum reliability.",
-    imageSrc: "/images/photo-solar-farm.jpg",
-    imageAlt: "Hybrid renewable system",
+    description: "Combine solar with wind and storage for maximum reliability and continuous power generation.",
+    imageSrc: "/images/photo-wind-farm.jpg",
+    imageAlt: "Wind and solar hybrid system",
   },
   {
     title: "Battery Storage",
-    description: "Maximize solar efficiency with advanced energy storage.",
+    description: "Store solar energy for 24/7 availability and peak load management.",
     imageSrc: "/images/photo-bess.jpg",
-    imageAlt: "Battery storage system",
+    imageAlt: "Battery energy storage system",
   },
   {
     title: "Design & Consultancy",
-    description: "Expert design and feasibility studies for your project.",
+    description: "Expert design and feasibility studies for your solar project.",
     imageSrc: "/images/photo-engineer.jpg",
-    imageAlt: "Engineering consultancy",
+    imageAlt: "Solar system engineering and planning",
   },
 ];
 
@@ -48,7 +48,7 @@ export default function SolarPVPage() {
         <SplitSection
           eyebrow="Tailor-Made Solutions"
           title="Solar PV Designed for Your Site"
-          description="At Awtad Energy, we provide tailor-made Solar PV solutions designed to meet the specific needs of each site, ensuring maximum efficiency and compliance with environmental and regulatory standards."
+          description="At OEnergy, we provide tailor-made Solar PV solutions designed to meet the specific needs of each site, ensuring maximum efficiency and compliance with environmental and regulatory standards."
           body="Whether you're looking for residential rooftop installations, commercial ground-mounted arrays, or utility-scale photovoltaic farms, we design systems that optimize energy production while delivering long-term value. Our approach combines site-specific engineering with proven technology to ensure peak performance."
           points={[
             "Tailored to your specific site conditions",
