@@ -1,0 +1,216 @@
+@import "tailwindcss";
+
+:root {
+  --sand: #f5f9f7;
+  --sand-soft: #fafcfb;
+  --dune: #e8f1ed;
+  --ink: #0f2b35;
+  --ink-soft: #5a7a83;
+  --ink-muted: #8a9fa8;
+  --gulf-teal: #1a9b8e;
+  --basin-blue: #0d4f5c;
+  --copper: #d4956f;
+  --sun-metal: #f4c969;
+  --mint-line: rgba(26, 155, 142, 0.18);
+  --success-green: #27ae60;
+}
+
+@theme inline {
+  --font-sans: var(--font-manrope);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(26, 155, 142, 0.05), transparent 26%),
+    radial-gradient(circle at top right, rgba(244, 201, 105, 0.12), transparent 24%),
+    linear-gradient(180deg, #f8faf9 0%, #f2f7f5 38%, #f5f9f7 100%);
+  color: var(--ink);
+  font-family: var(--font-manrope), sans-serif;
+}
+
+img {
+  display: block;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(15, 102, 102, 0.32);
+  outline-offset: 3px;
+}
+
+.font-display {
+  font-family: var(--font-league-spartan), sans-serif;
+}
+
+.font-arabic {
+  font-family: var(--font-ibm-plex-arabic), sans-serif;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gulf-teal);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 1.2rem;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.8;
+}
+
+.surface-card {
+  border-radius: 1.75rem;
+  border: 1px solid rgba(26, 155, 142, 0.1);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)),
+    rgba(255, 255, 255, 0.90);
+  box-shadow: 0 20px 50px rgba(15, 43, 53, 0.08);
+  backdrop-filter: blur(20px);
+}
+
+.hero-frame {
+  position: relative;
+  border: 1px solid rgba(22, 49, 59, 0.08);
+  background: linear-gradient(180deg, rgba(18, 123, 105, 0.06), rgba(255, 255, 255, 0.04));
+  box-shadow: 0 34px 90px rgba(22, 49, 59, 0.14);
+}
+
+.card-title {
+  font-family: var(--font-league-spartan), sans-serif;
+  font-size: 1.45rem;
+  line-height: 0.95;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  color: var(--ink);
+}
+
+.kicker {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gulf-teal);
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--gulf-teal);
+}
+
+/* Button styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.8rem;
+  background-color: var(--gulf-teal);
+  color: white;
+  font-weight: 700;
+  border-radius: 0.6rem;
+  transition: all 200ms ease;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--basin-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(26, 155, 142, 0.2);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.8rem;
+  background-color: transparent;
+  color: var(--gulf-teal);
+  font-weight: 700;
+  border-radius: 0.6rem;
+  border: 2px solid var(--gulf-teal);
+  transition: all 200ms ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background-color: var(--gulf-teal);
+  color: white;
+}
+
+/* Section spacing improvements */
+.section-padding {
+  padding: 3rem 1rem;
+}
+
+.kicker {
+  color: var(--ink-muted);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.field-label {
+  display: grid;
+  gap: 0.45rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+}
+
+.field-input {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid rgba(22, 49, 59, 0.12);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.95rem 1rem;
+  color: var(--ink);
+}
+
+.field-input::placeholder {
+  color: var(--ink-muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

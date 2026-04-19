@@ -1,0 +1,33 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#102733"/>
+  <path d="M0 0H1600V516C1374 580 1136 612 885 612C534 612 238 550 0 424V0Z" fill="url(#s1)"/>
+  <path d="M0 604C208 657 470 698 772 698C1067 698 1343 653 1600 582V1200H0V604Z" fill="url(#s2)"/>
+  <circle cx="1236" cy="226" r="96" fill="url(#s3)"/>
+  <path d="M190 786L560 734L934 770L1278 736L1394 904H254L190 786Z" fill="#11232D"/>
+  <path d="M276 796L574 754L916 790L1210 761L1290 861H338L276 796Z" fill="#173546"/>
+  <path d="M374 670H650V856H374V670Z" fill="#0E1D27"/>
+  <path d="M396 692H628V710H396V692Z" fill="#F3BD6A" fill-opacity="0.62"/>
+  <path d="M396 734H628V752H396V734Z" fill="#0F6666" fill-opacity="0.74"/>
+  <path d="M792 610V840" stroke="#DCE7E7" stroke-width="8"/>
+  <path d="M734 660L792 610L850 660" stroke="#DCE7E7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M752 714L792 610L832 714" stroke="#DCE7E7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M960 652H1234V850H960V652Z" fill="#122C39"/>
+  <path d="M990 690H1204V716H990V690Z" fill="#0F6666"/>
+  <path d="M990 746H1204V772H990V746Z" fill="#F3BD6A"/>
+  <path d="M246 626C352 586 496 568 660 568C852 568 1080 608 1314 686" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+  <defs>
+    <linearGradient id="s1" x1="800" y1="0" x2="800" y2="516" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#163F52"/>
+      <stop offset="1" stop-color="#0F5F63"/>
+    </linearGradient>
+    <linearGradient id="s2" x1="800" y1="582" x2="800" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D2AA7A"/>
+      <stop offset="0.54" stop-color="#8B5A44"/>
+      <stop offset="1" stop-color="#2E1D1B"/>
+    </linearGradient>
+    <radialGradient id="s3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1236 226) rotate(90) scale(96)">
+      <stop stop-color="#F4D492"/>
+      <stop offset="1" stop-color="#F3BD6A" stop-opacity="0.14"/>
+    </radialGradient>
+  </defs>
+</svg>

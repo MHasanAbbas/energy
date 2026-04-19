@@ -1,0 +1,32 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#10212B"/>
+  <path d="M0 0H1600V468C1401 530 1166 570 898 570C540 570 240 513 0 382V0Z" fill="url(#i1)"/>
+  <path d="M0 570C211 645 476 690 760 690C1081 690 1360 632 1600 536V1200H0V570Z" fill="url(#i2)"/>
+  <path d="M0 904C208 843 390 821 566 821C854 821 1206 899 1600 1038V1200H0V904Z" fill="#152A34"/>
+  <circle cx="1206" cy="216" r="82" fill="url(#i3)"/>
+  <rect x="918" y="664" width="362" height="180" fill="#123443"/>
+  <rect x="942" y="688" width="142" height="28" fill="#F3BD6A" fill-opacity="0.62"/>
+  <rect x="942" y="730" width="310" height="22" fill="#0F6666" fill-opacity="0.72"/>
+  <rect x="240" y="724" width="410" height="118" fill="#0E1B25"/>
+  <rect x="276" y="748" width="334" height="18" fill="#0F6666" fill-opacity="0.65"/>
+  <rect x="276" y="786" width="208" height="18" fill="#F3BD6A" fill-opacity="0.62"/>
+  <path d="M1324 618V842" stroke="#DDE7E7" stroke-width="7"/>
+  <path d="M1272 658L1324 618L1376 658" stroke="#DDE7E7" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1288 706L1324 618L1360 706" stroke="#DDE7E7" stroke-width="7" stroke-linecap="round"/>
+  <path d="M174 770L560 710L1036 746L1400 702" stroke="rgba(255,255,255,0.14)" stroke-width="2"/>
+  <defs>
+    <linearGradient id="i1" x1="800" y1="0" x2="800" y2="468" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173F50"/>
+      <stop offset="1" stop-color="#235360"/>
+    </linearGradient>
+    <linearGradient id="i2" x1="800" y1="536" x2="800" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D0AF88"/>
+      <stop offset="0.55" stop-color="#92624A"/>
+      <stop offset="1" stop-color="#38231E"/>
+    </linearGradient>
+    <radialGradient id="i3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1206 216) rotate(90) scale(82)">
+      <stop stop-color="#F4D593"/>
+      <stop offset="1" stop-color="#F3BD6A" stop-opacity="0.14"/>
+    </radialGradient>
+  </defs>
+</svg>

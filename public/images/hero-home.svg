@@ -1,0 +1,40 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1200" fill="#102733"/>
+  <path d="M0 0H1600V510C1397 565 1168 592 910 592C550 592 246 539 0 418V0Z" fill="url(#sky)"/>
+  <path d="M0 598C221 664 510 699 796 699C1093 699 1375 661 1600 580V1200H0V598Z" fill="url(#land)"/>
+  <path d="M154 776L602 705L1248 756L1452 936H186L154 776Z" fill="#0E1B25"/>
+  <path d="M204 740L604 678L1182 723L1366 863H258L204 740Z" fill="#123040"/>
+  <path d="M282 775L605 730L1026 764L1152 845H340L282 775Z" fill="#0C1D2A"/>
+  <path d="M330 783H1118L1166 838H375L330 783Z" fill="#173749"/>
+  <path d="M402 742L989 785" stroke="rgba(243,189,106,0.45)" stroke-width="4"/>
+  <path d="M0 908C191 851 380 823 564 823C854 823 1178 895 1600 1047V1200H0V908Z" fill="url(#foreground)"/>
+  <circle cx="1186" cy="208" r="84" fill="url(#sun)"/>
+  <path d="M1290 620V810" stroke="#D9E5E5" stroke-width="8"/>
+  <path d="M1234 660L1290 620L1346 660" stroke="#D9E5E5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1250 698L1290 620L1330 698" stroke="#D9E5E5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1272 620L1234 660" stroke="#D9E5E5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1308 620L1346 660" stroke="#D9E5E5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1038 660V804" stroke="#C8D7D8" stroke-width="7"/>
+  <path d="M1000 686L1038 660L1076 686" stroke="#C8D7D8" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1010 714L1038 660L1066 714" stroke="#C8D7D8" stroke-width="7" stroke-linecap="round"/>
+  <path d="M240 612C358 572 497 555 654 555C875 555 1103 595 1348 676" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+  <defs>
+    <linearGradient id="sky" x1="800" y1="0" x2="800" y2="510" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#174153"/>
+      <stop offset="1" stop-color="#0F6A70"/>
+    </linearGradient>
+    <linearGradient id="land" x1="800" y1="580" x2="800" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D1A271"/>
+      <stop offset="0.55" stop-color="#8B5C45"/>
+      <stop offset="1" stop-color="#40261F"/>
+    </linearGradient>
+    <linearGradient id="foreground" x1="800" y1="823" x2="800" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#203440"/>
+      <stop offset="1" stop-color="#0F1A21"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1186 208) rotate(90) scale(84)">
+      <stop stop-color="#F3D08C"/>
+      <stop offset="1" stop-color="#F3BD6A" stop-opacity="0.18"/>
+    </radialGradient>
+  </defs>
+</svg>
