@@ -71,25 +71,7 @@ export default function AboutPage() {
         />
       </SectionShell>
 
-      <SectionShell tone="dark">
-        <div className="grid gap-8 lg:grid-cols-3 text-center">
-          <div className="rounded-2xl border border-white/12 bg-white/6 p-8 backdrop-blur-md">
-            <div className="text-5xl font-bold text-[var(--sun-metal)] mb-3">10+</div>
-            <h3 className="text-xl font-semibold text-white mb-2">Years Experience</h3>
-            <p className="text-white/72">Proven track record in renewable energy deployment</p>
-          </div>
-          <div className="rounded-2xl border border-white/12 bg-white/6 p-8 backdrop-blur-md">
-            <div className="text-5xl font-bold text-[var(--sun-metal)] mb-3">500+</div>
-            <h3 className="text-xl font-semibold text-white mb-2">Projects Delivered</h3>
-            <p className="text-white/72">Successful installations across multiple sectors</p>
-          </div>
-          <div className="rounded-2xl border border-white/12 bg-white/6 p-8 backdrop-blur-md">
-            <div className="text-5xl font-bold text-[var(--sun-metal)] mb-3">100%</div>
-            <h3 className="text-xl font-semibold text-white mb-2">Client Satisfaction</h3>
-            <p className="text-white/72">Dedicated to exceeding client expectations</p>
-          </div>
-        </div>
-      </SectionShell>
+
 
       <SectionShell>
         <CTABanner

@@ -66,7 +66,7 @@ export default function SustainabilityPage() {
       <PageHero
         eyebrow="Sustainability / Insights"
         title="A practical view of sustainability, shaped by performance and long-term value."
-        description="For Awtad Energy, sustainability is not a separate narrative. It is part of how projects reduce exposure, improve efficiency, support resilience and prepare clients for the next stage of the regional energy transition."
+        description="For OEnergy, sustainability is not a separate narrative. It is part of how projects reduce exposure, improve efficiency, support resilience and prepare clients for the next stage of the regional energy transition."
         imageSrc="/images/photo-engineer.jpg"
         imageAlt="Placeholder photo showing technical sustainability and energy transition planning"
         imageLabel="Operational sustainability"
